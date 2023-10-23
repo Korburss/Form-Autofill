@@ -34,8 +34,7 @@ function formSubmit() {
     if (form.reportValidity()) {
         fetch(formTarget, {
             method: 'POST',
-            mode: 'no-cors',
-            data: formFill,
+            body: formFill,
         });
     }
     else {
